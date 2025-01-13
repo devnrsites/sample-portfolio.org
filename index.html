@@ -1,0 +1,76 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SVG.FPP</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    height: 65px;
+    background: #6E75C3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  nav a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  div {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+    p{
+      margin-top: 25px;
+      margin-left: 10px;
+    }
+    #d {
+      display: none;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+            @keyframes float-up {
+      0% {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+        .fll {
+      transform: translateY(100%);
+      animation: float-up 100s ease-out forwards;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1 onclick="gg();" >Hello</h1>
+    <div>
+      <a href="Home">Home</a>
+      <a href="About">About</a>
+      <a href="Contact">Contact</a>
+      <a href="Help">Help</a>
+    </div>
+  </nav>
+<p id="h3">Hi There, Iam a Front-end Web Developer...</p>
+<a href="fpp1.jpg" id="d" class="fll">cd downloads</a>
+  <script>
+  let a = document.getElementById("h3");
+  a.addEventListener("dblclick", ()=>{
+    document.getElementById("d").style.display="block";
+  })
+  </script>
+</body>
+</html>
